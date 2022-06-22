@@ -310,7 +310,6 @@ button {
   top: 0;
   border-bottom: solid 1px var(--primary-color);
   opacity: 0.9;
-  height: auto;
 }
 
 .navbar ul {
@@ -576,4 +575,3 @@ button {
     padding: 0.3rem 0.4rem;
   }
 }
-

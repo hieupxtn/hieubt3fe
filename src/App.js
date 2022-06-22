@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import React, {Fragment} from 'react';
 import Navbar from './components/layout/Navbar';
 import Landing from './components/layout/Landing';
@@ -7,16 +7,18 @@ import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 
 const App = () => (
-<BrowserRouter>
+<Router>
     <Fragment>
       <Navbar />
-      <Route  path='/' element={<Landing />} />
-      <Routes>
-        <Route path='/login' element = {<Login />} />
-        <Route path='register' element = {<Register />} />
-      </Routes>
+      <Route exact path='/' component={Landing}/>
+      <section className='container'>
+      <Switch>
+        <Route exact path='/register' component={Register} />
+        <Route exact path='/login' component={Login} />
+      </Switch>
+      </section>   
     </Fragment>
-</BrowserRouter>
+</Router>
 );
 
 export default App;

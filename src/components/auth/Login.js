@@ -21,7 +21,7 @@ const Login = () => {
   }
 
   return (
-        <Fragment>
+  <Fragment>
       <h1 className='large text-primary'>Sign In</h1>
       <p className='lead'>
         <i className='fas fa-user' /> Sign Into Your Account
@@ -52,7 +52,7 @@ const Login = () => {
       <p className='my-1'>
         Don't have an account <Link to='/login'>Sign In</Link>
       </p>
-    </Fragment>
+  </Fragment>
   );
 };
 
