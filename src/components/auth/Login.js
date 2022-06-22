@@ -1,5 +1,7 @@
 import React, { Fragment, useState } from 'react'
+import axios from 'axios';
 import { Link } from 'react-router-dom';
+
 
 const Login = () => {
 
@@ -50,7 +52,7 @@ const Login = () => {
         <input type='submit' className='btn btn-primary' value='login'/>
       </form>
       <p className='my-1'>
-        Don't have an account <Link to='/login'>Sign In</Link>
+        Don't have an account <Link to='/register'>Sign Up</Link>
       </p>
   </Fragment>
   );
