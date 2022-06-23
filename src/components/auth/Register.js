@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 const Register = () => {
 
@@ -104,4 +105,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default connect()(Register);
