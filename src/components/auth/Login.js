@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import { login } from '../../actions/login'
+
 
 const Login = () => {
 
@@ -19,7 +19,7 @@ const Login = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    login(email, password)
+    console.log('SUCCESS');
   }
 
   return (
